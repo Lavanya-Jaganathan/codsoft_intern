@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="col">
+    <header>
+        <nav>
+            <a href="#" class="logo">Pinky Flower Shop</a>
+            <ul>
+                <li><a href="#h" class="nav-link">Home</a></li>
+                <li><a href="#a" class="nav-link">About</a></li>
+                <li><a href="#p" class="nav-link">Products</a></li>
+                <li><a href="#r" class="nav-link">Review</a></li>
+                <li><a href="#c" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to <span class="highlight">Pinky Flower Shop</span></h1><br>
+        <a href="#ss" class="cta-button">Shop Now</a>
+    </section>
+
+    <section class="kk">
+        <h1>Celebrate Life With Flowers!</h1>
+    </section>
+    
+    <section class="empty">
+        <div class="products-container">
+            <div class="prod FLOWERS" onclick="blinkImage(this)">
+                <img src="Images/flow.png" alt="Flowers">
+                <h3>Flowers</h3>
+            </div>
+            <div class="prod OCCASIONS" onclick="blinkImage(this)">
+                <img src="Images/occ.png" alt="Occasion">
+                <h3>Occasion</h3>
+            </div>
+            <div class="prod WEDDINGS" onclick="blinkImage(this)">
+                <img src="Images/wed.png" alt="Wedding">
+                <h3>Wedding</h3>
+            </div>
+            <div class="prod GIFTS" onclick="blinkImage(this)">
+                <img src="Images/gift.png" alt="Gifts">
+                <h3>Gifts</h3>
+            </div>
+        </div>
+    </section>
+    
+    <h1 class="js">Just For You</h1>
+    
+    <section id="testimonials">
+        <div class="products-container">
+            <div class="product a" onclick="blinkImage(this)">
+                <img src="Images/a1.png">
+                <h3>Lotus</h3>
+            </div>
+            <div class="product b" onclick="blinkImage(this)">
+                <img src="Images/a12.png">
+                <h3>Jasmine</h3>
+            </div>
+            <div class="product c" onclick="blinkImage(this)">
+                <img src="Images/a2.png">
+                <h3>Transvaal Daisy</h3>
+            </div>
+            <div class="product d" onclick="blinkImage(this)">
+                <img src="Images/a7.png">
+                <h3>Tulipa</h3>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="sec2">
+        <div class="products-container">
+            <div class="product a" onclick="blinkImage(this)">
+                <img src="Images/a4.png">
+                <h3>Red Rose</h3>
+            </div>
+            <div class="product b" onclick="blinkImage(this)">
+                <img src="Images/a5.png">
+                <h3>Sun Flower</h3>
+            </div>
+            <div class="product c" onclick="blinkImage(this)">
+                <img src="Images/a6.png">
+                <h3>Dahlia</h3>
+            </div>
+            <div class="product d" onclick="blinkImage(this)">
+                <img src="Images/a3.png">
+                <h3>Daisy</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sec3">
+        <div class="products-container">
+            <div class="product a" onclick="blinkImage(this)">
+                <img src="Images/a8.png">
+                <h3>Pink Rose</h3>
+            </div>
+            <div class="product b" onclick="blinkImage(this)">
+                <img src="Images/a9.png">
+                <h3>Aster</h3>
+            </div>
+            <div class="product c" onclick="blinkImage(this)">
+                <img src="Images/a10.png">
+                <h3>Marigold</h3>
+            </div>
+            <div class="product d" onclick="blinkImage(this)">
+                <img src="Images/a11.png">
+                <h3>Red Daisy</h3>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-section">
+            <h2>Contact Information</h2>
+            <p>123 Flower Street, Blossom City, FL 12345</p>
+            <p>Phone : 9876543210</p>
+            <p>Email : contact@pinkyflowershop.com</p>
+        </div>
+        <div class="footer-section" >
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon"><img src="Images/face.png" alt="Facebook"  ></a>
+            <a href="#" class="social-icon"><img src="Images/insta.png" alt="Instagram" ></a>
+            <a href="#" class="social-icon"><img src="Images/twit.png" alt="Twitter" ></a>
+    
+        </div>
+        
+        <div class="footer-section">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="ct">Subscribe</button>
+            </form>
+        </div>
+        <div><h2>.....</h2></div>
+        
+    </footer>
+    
+    <script>
+        function blinkImage(img) {
+            img.classList.add('blink'); 
+            setTimeout(function() {
+                img.classList.remove('blink'); 
+            }, 500);
+        }
+    </script>
+</body>
+</html>
